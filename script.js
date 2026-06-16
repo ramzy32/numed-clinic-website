@@ -4,8 +4,11 @@ function toggleLang() {
     isArabic = !isArabic;
 
     document.querySelectorAll("[data-en]").forEach(el => {
-        el.innerText = isArabic
-            ? el.getAttribute("data-ar")
-            : el.getAttribute("data-en");
+        const en = el.getAttribute("data-en");
+        const ar = el.getAttribute("data-ar");
+
+        if (en && ar) {
+            el.innerText = isArabic ? ar : en;
+        }
     });
 }
