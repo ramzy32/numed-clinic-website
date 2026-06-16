@@ -11,4 +11,8 @@ function toggleLang() {
             el.innerText = isArabic ? ar : en;
         }
     });
+
+    // optional RTL fix
+    document.body.style.direction = isArabic ? "rtl" : "ltr";
+    document.body.style.textAlign = isArabic ? "right" : "left";
 }
