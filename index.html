@@ -9,146 +9,93 @@
 
 <body>
 
+<!-- NAV -->
 <nav>
     <h2>NU.MED CLINICS</h2>
 </nav>
 
+<!-- HERO -->
 <header class="hero">
-    <img src="logo.png.png" alt="Nu.med Clinics Logo" class="logo">
+    <img src="logo.png.png" class="logo">
 
     <h1>Advanced Medical & Aesthetic Care</h1>
-
-    <p>
-        Professional cosmetic, dermatological, dental and therapeutic
-        treatments in Nasr City, Cairo.
-    </p>
+    <p>Professional cosmetic, dermatology, dental and therapeutic treatments in Cairo.</p>
 
     <div class="buttons">
         <a href="https://wa.me/201001040821" class="btn">Book via WhatsApp</a>
-        <a href="https://www.facebook.com/NuMedClinics.eg/" target="_blank" class="btn">Facebook</a>
-        <a href="https://www.instagram.com/numedclinics.eg/" target="_blank" class="btn">Instagram</a>
+        <a href="https://www.facebook.com/NuMedClinics.eg/" class="btn">Facebook</a>
+        <a href="https://www.instagram.com/numedclinics.eg/" class="btn">Instagram</a>
     </div>
 </header>
 
-<section>
+<!-- ABOUT -->
+<section class="fade">
     <h2>About Us</h2>
-    <p>
-        Nu.med Clinics is a specialized medical and aesthetic center located in
-        Nasr City, Cairo. We offer advanced cosmetic, skin care, dental and
-        therapeutic services with a focus on quality, patient comfort and
-        personalized treatment plans.
-    </p>
+    <p>Nu.med Clinics provides advanced aesthetic and medical care with personalized treatment plans and modern technology.</p>
 </section>
 
-<section>
+<!-- SERVICES SLIDER -->
+<section class="fade">
     <h2>Our Services</h2>
 
-    <div class="gallery services">
+    <div class="slider">
+        <button onclick="prevService()">←</button>
 
-        <div class="card">
-            <img src="s.1.png">
-            <p>Hair & Face Treatment</p>
+        <div class="service-card" id="serviceBox">
+            Hair & Face Treatment
         </div>
 
-        <div class="card">
-            <img src="s.2.png">
-            <p>Plastic Surgery</p>
-        </div>
-
-        <div class="card">
-            <img src="s.3.png">
-            <p>Laser Hair Removal</p>
-        </div>
-
-        <div class="card">
-            <img src="s.4.png">
-            <p>Cosmetic Procedures</p>
-        </div>
-
-        <div class="card">
-            <img src="s.5.png">
-            <p>Skin Treatment</p>
-        </div>
-
-        <div class="card">
-            <img src="s.6.png">
-            <p>4 Plus Lifting</p>
-        </div>
-
-        <div class="card">
-            <img src="s.7.png">
-            <p>Tecar Therapy</p>
-        </div>
-
-        <div class="card">
-            <img src="s.8.png">
-            <p>Dental Services</p>
-        </div>
-
-        <div class="card">
-            <img src="s.9.png">
-            <p>Fractional Laser</p>
-        </div>
-
+        <button onclick="nextService()">→</button>
     </div>
 </section>
 
-<section>
-    <h2>Before & After Results</h2>
+<!-- BEFORE AFTER SLIDER -->
+<section class="fade">
+    <h2>Before & After</h2>
 
-    <div class="gallery before-after">
+    <div class="slider">
+        <button onclick="prevBA()">←</button>
 
-        <div class="card">
-            <img src="ba.1.png">
+        <div class="ba-box">
+            <img id="baImg" src="ba.1.png">
         </div>
 
-        <div class="card">
-            <img src="ba.2.png">
-        </div>
-
-        <div class="card">
-            <img src="ba.3.png">
-        </div>
-
+        <button onclick="nextBA()">→</button>
     </div>
-
-    <p>
-        Selected treatment results showing the effectiveness of our aesthetic procedures.
-    </p>
 </section>
 
-<section>
+<!-- REVIEWS -->
+<section class="fade">
     <h2>Patient Reviews</h2>
 
-    <div class="review">Professional staff, excellent service and great patient care.</div>
-    <div class="review">Clean clinic, organized appointments and satisfying results.</div>
-    <div class="review">Friendly team and comfortable treatment experience.</div>
+    <div class="review">Professional staff and excellent service.</div>
+    <div class="review">Clean clinic and great results.</div>
+    <div class="review">Very comfortable experience.</div>
 </section>
 
-<section id="contact">
+<!-- CONTACT -->
+<section id="contact" class="fade">
     <h2>Contact Us</h2>
 
     <p><strong>Phone:</strong> 01001040821</p>
 
     <p>
         <strong>Address:</strong><br>
-        101 Mostafa El-Nahaas, Al Hay as Sades,<br>
         Nasr City, Cairo
     </p>
 
-    <p>
-        Saturday - Thursday: 12 PM - 10 PM<br>
-        Friday: Closed
-    </p>
-
-    <a href="https://maps.app.goo.gl/K7fE2NdFSUZjSkv36" target="_blank" class="btn">
-        Open Location
-    </a>
+    <a href="https://maps.app.goo.gl/K7fE2NdFSUZjSkv36" class="btn">Open Location</a>
 </section>
 
+<!-- FOOTER -->
 <footer>
     <p>© 2026 Nu.med Clinics</p>
 </footer>
+
+<!-- FLOATING WHATSAPP -->
+<a class="whatsapp" href="https://wa.me/201001040821">💬</a>
+
+<script src="script.js"></script>
 
 </body>
 </html>
