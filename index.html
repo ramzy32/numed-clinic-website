@@ -9,90 +9,110 @@
 
 <body>
 
-<!-- NAV -->
 <nav>
     <h2>NU.MED CLINICS</h2>
+
+    <!-- LANGUAGE BUTTON -->
+    <button class="lang-btn" onclick="toggleLang()">AR / EN</button>
 </nav>
 
-<!-- HERO -->
 <header class="hero">
+
     <img src="logo.png.png" class="logo">
 
-    <h1>Advanced Medical & Aesthetic Care</h1>
-    <p>Professional cosmetic, dermatology, dental and therapeutic treatments in Cairo.</p>
+    <h1 data-en="Advanced Medical & Aesthetic Care"
+        data-ar="رعاية طبية وتجميلية متقدمة">
+        Advanced Medical & Aesthetic Care
+    </h1>
+
+    <p data-en="Professional cosmetic, dermatology, dental and therapeutic treatments in Cairo."
+       data-ar="خدمات تجميلية وطبية متخصصة في القاهرة بأحدث التقنيات.">
+        Professional cosmetic, dermatology, dental and therapeutic treatments in Cairo.
+    </p>
 
     <div class="buttons">
-        <a href="https://wa.me/201001040821" class="btn">Book via WhatsApp</a>
+
+        <!-- BOOKING BUTTON -->
+        <a href="#contact" class="btn"
+           data-en="Book Now"
+           data-ar="احجز الآن">
+           Book Now
+        </a>
+
         <a href="https://www.facebook.com/NuMedClinics.eg/" class="btn">Facebook</a>
         <a href="https://www.instagram.com/numedclinics.eg/" class="btn">Instagram</a>
+
     </div>
 </header>
 
-<!-- ABOUT -->
-<section class="fade">
-    <h2>About Us</h2>
-    <p>Nu.med Clinics provides advanced aesthetic and medical care with personalized treatment plans and modern technology.</p>
-</section>
+<section class="fade" id="about">
 
-<!-- SERVICES SLIDER -->
-<section class="fade">
-    <h2>Our Services</h2>
+    <h2 data-en="About Us" data-ar="من نحن">About Us</h2>
 
-    <div class="slider">
-        <button onclick="prevService()">←</button>
-
-        <div class="service-card" id="serviceBox">
-            Hair & Face Treatment
-        </div>
-
-        <button onclick="nextService()">→</button>
-    </div>
-</section>
-
-<!-- BEFORE AFTER SLIDER -->
-<section class="fade">
-    <h2>Before & After</h2>
-
-    <div class="slider">
-        <button onclick="prevBA()">←</button>
-
-        <div class="ba-box">
-            <img id="baImg" src="ba.1.png">
-        </div>
-
-        <button onclick="nextBA()">→</button>
-    </div>
-</section>
-
-<!-- REVIEWS -->
-<section class="fade">
-    <h2>Patient Reviews</h2>
-
-    <div class="review">Professional staff and excellent service.</div>
-    <div class="review">Clean clinic and great results.</div>
-    <div class="review">Very comfortable experience.</div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="fade">
-    <h2>Contact Us</h2>
-
-    <p><strong>Phone:</strong> 01001040821</p>
-
-    <p>
-        <strong>Address:</strong><br>
-        Nasr City, Cairo
+    <p data-en="Nu.med Clinics is a specialized medical and aesthetic center in Cairo offering advanced treatments."
+       data-ar="عيادات نو.ميد مركز طبي وتجميل متخصص في القاهرة يقدم أحدث العلاجات.">
+        Nu.med Clinics is a specialized medical and aesthetic center in Cairo offering advanced treatments.
     </p>
 
-    <a href="https://maps.app.goo.gl/K7fE2NdFSUZjSkv36" class="btn">Open Location</a>
 </section>
 
-<!-- FOOTER -->
+<section class="fade" id="services">
+
+    <h2 data-en="Our Services" data-ar="خدماتنا">Our Services</h2>
+
+    <div class="grid">
+
+        <div class="card"><img src="s.1.png"><h3>Hair & Face Treatment</h3></div>
+        <div class="card"><img src="s.2.png"><h3>Plastic Surgery</h3></div>
+        <div class="card"><img src="s.3.png"><h3>Laser Hair Removal</h3></div>
+        <div class="card"><img src="s.4.png"><h3>Cosmetic Procedures</h3></div>
+        <div class="card"><img src="s.5.png"><h3>Skin Treatment</h3></div>
+        <div class="card"><img src="s.8.png"><h3>Dental Services</h3></div>
+
+    </div>
+
+</section>
+
+<section class="fade">
+
+    <h2 data-en="Before & After" data-ar="قبل وبعد">Before & After</h2>
+
+    <div class="grid">
+
+        <div class="card"><img src="ba.1.png"></div>
+        <div class="card"><img src="ba.2.png"></div>
+        <div class="card"><img src="ba.3.png"></div>
+
+    </div>
+
+</section>
+
+<section class="fade" id="contact">
+
+    <h2 data-en="Contact & Booking" data-ar="التواصل والحجز">Contact & Booking</h2>
+
+    <p>
+        📞 01001040821<br>
+        📍 Nasr City, Cairo
+    </p>
+
+    <p data-en="To book an appointment, call us or message us on WhatsApp or social media."
+       data-ar="للحجز، اتصل بنا أو راسلنا عبر واتساب أو مواقع التواصل الاجتماعي.">
+        To book an appointment, call us or message us on WhatsApp or social media.
+    </p>
+
+    <!-- BOOKING ACTIONS -->
+    <a href="tel:01001040821" class="btn">Call Now</a>
+    <a href="https://wa.me/201001040821" class="btn">WhatsApp</a>
+    <a href="https://www.facebook.com/NuMedClinics.eg/" class="btn">Facebook</a>
+
+</section>
+
 <footer>
     <p>© 2026 Nu.med Clinics</p>
 </footer>
 
-<!-- FLOATING WHATSAPP -->
+<!-- WHATSAPP FLOAT -->
 <a class="whatsapp" href="https://wa.me/201001040821">💬</a>
 
 <script src="script.js"></script>
