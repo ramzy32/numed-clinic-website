@@ -1,1 +1,3 @@
-console.log("Nu.med Clinics Website Loaded");
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("Nu.med Clinics website loaded successfully");
+});
