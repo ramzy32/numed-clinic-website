@@ -9,138 +9,105 @@
 
 <body>
 
+<!-- NAV -->
 <nav>
     <h2>NU.MED CLINICS</h2>
+
     <button class="lang-btn" onclick="toggleLang()">AR / EN</button>
 </nav>
 
+<!-- HERO -->
 <header class="hero">
 
     <img src="logo.png.png" class="logo">
 
-    <h1 data-en="Advanced Medical & Aesthetic Care You Can Trust"
-        data-ar="رعاية طبية وتجميلية متقدمة يمكنك الوثوق بها">
-        Advanced Medical & Aesthetic Care You Can Trust
+    <h1 data-en="Advanced Medical & Aesthetic Care"
+        data-ar="رعاية طبية وتجميلية متقدمة">
+        Advanced Medical & Aesthetic Care
     </h1>
 
-    <p data-en="We provide high-quality cosmetic, dermatology, dental, and therapeutic treatments using modern techniques and a patient-first approach to ensure natural, safe, and effective results."
-       data-ar="نقدم خدمات تجميلية وطبية متقدمة في الجلدية والأسنان والعلاجات التجميلية باستخدام أحدث التقنيات مع التركيز على راحة المريض ونتائج طبيعية وآمنة.">
-        We provide high-quality cosmetic, dermatology, dental, and therapeutic treatments using modern techniques and a patient-first approach to ensure natural, safe, and effective results.
+    <p data-en="A modern clinic providing advanced cosmetic, dermatology, dental and therapeutic treatments with a focus on safety, comfort, and natural results."
+       data-ar="عيادات حديثة تقدم خدمات الجلدية والتجميل والأسنان والعلاج الطبيعي مع التركيز على الأمان والراحة والنتائج الطبيعية.">
+        A modern clinic providing advanced cosmetic, dermatology, dental and therapeutic treatments.
     </p>
 
-    <div class="buttons">
-
-        <a href="#contact" class="btn"
-           data-en="Book Appointment"
-           data-ar="احجز موعد">
-           Book Appointment
-        </a>
-
-        <a href="https://www.facebook.com/NuMedClinics.eg/" class="btn">Facebook</a>
-        <a href="https://www.instagram.com/numedclinics.eg/" class="btn">Instagram</a>
-
-    </div>
+    <a href="booking.html" class="btn"
+       data-en="Book Appointment"
+       data-ar="احجز موعد">
+       Book Appointment
+    </a>
 
 </header>
 
+<!-- ABOUT -->
 <section class="fade">
 
-    <h2 data-en="About Nu.med Clinics" data-ar="عن عيادات نو.ميد">About Nu.med Clinics</h2>
+    <h2 data-en="About Us" data-ar="من نحن">About Us</h2>
 
-    <p data-en="Nu.med Clinics is a modern medical and aesthetic center located in Nasr City, Cairo. Our clinic focuses on combining advanced medical technology with personalized care to deliver safe, effective, and long-lasting results for every patient."
-       data-ar="عيادات نو.ميد هي مركز طبي وتجميل حديث في مدينة نصر بالقاهرة، يركز على الجمع بين أحدث التقنيات الطبية والرعاية الشخصية لتحقيق أفضل النتائج لكل مريض.">
-        Nu.med Clinics is a modern medical and aesthetic center located in Nasr City, Cairo.
+    <p data-en="Nu.med Clinics is a specialized medical and aesthetic center in Nasr City, Cairo. We focus on combining advanced technology with medical expertise to deliver safe, effective, and personalized care for every patient. Our goal is not only treatment but improving confidence, appearance, and quality of life."
+       data-ar="عيادات نو.ميد هي مركز طبي وتجميل متخصص في مدينة نصر بالقاهرة، ندمج بين أحدث التقنيات والخبرة الطبية لتقديم رعاية آمنة وفعالة لكل مريض. هدفنا ليس العلاج فقط بل تحسين الثقة والمظهر وجودة الحياة.">
+        Nu.med Clinics is a specialized medical and aesthetic center in Nasr City, Cairo.
     </p>
 
 </section>
 
-<section id="services" class="fade">
+<!-- SERVICES SLIDER -->
+<section>
 
-    <h2 data-en="Our Specialized Services" data-ar="خدماتنا المتخصصة">
-        Our Specialized Services
-    </h2>
+<h2 data-en="Our Services" data-ar="خدماتنا">Our Services</h2>
 
-    <p data-en="We offer a wide range of carefully selected treatments designed to improve appearance, health, and confidence."
-       data-ar="نقدم مجموعة واسعة من العلاجات المختارة بعناية لتحسين المظهر والصحة وزيادة الثقة بالنفس.">
-        We offer a wide range of carefully selected treatments designed to improve appearance, health, and confidence.
-    </p>
+<div class="slider">
 
-    <div class="grid">
+    <button onclick="prevService()">←</button>
 
-        <div class="card"><img src="s.1.png"><p>Hair & Face Rejuvenation</p></div>
-        <div class="card"><img src="s.2.png"><p>Plastic Surgery Procedures</p></div>
-        <div class="card"><img src="s.3.png"><p>Laser Hair Removal</p></div>
-        <div class="card"><img src="s.4.png"><p>Cosmetic Enhancements</p></div>
-        <div class="card"><img src="s.5.png"><p>Advanced Skin Treatments</p></div>
-        <div class="card"><img src="s.6.png"><p>Facial Lifting Technologies</p></div>
-        <div class="card"><img src="s.7.png"><p>Therapeutic Tecar Therapy</p></div>
-        <div class="card"><img src="s.8.png"><p>Comprehensive Dental Care</p></div>
-        <div class="card"><img src="s.9.png"><p>Fractional Laser Technology</p></div>
+    <div class="card" id="serviceBox">
+
+        <img id="serviceImg" src="s.1.png">
+
+        <h3 id="serviceTitle">Hair & Face Treatment</h3>
+
+        <p id="serviceDesc">
+            Skin and hair rejuvenation using modern safe techniques.
+        </p>
 
     </div>
 
+    <button onclick="nextService()">→</button>
+
+</div>
+
 </section>
 
-<section class="fade">
+<!-- BEFORE AFTER SLIDER -->
+<section>
 
-    <h2 data-en="Before & After Transformations" data-ar="نتائج قبل وبعد">
-        Before & After Transformations
-    </h2>
+<h2 data-en="Before & After Results" data-ar="قبل وبعد">Before & After Results</h2>
 
-    <p data-en="Real results from our patients showing visible improvements achieved through safe and professional treatments."
-       data-ar="نتائج حقيقية لمرضانا توضح التحسن الواضح بعد العلاجات الآمنة والمهنية.">
-        Real results from our patients showing visible improvements achieved through safe and professional treatments.
-    </p>
+<div class="slider">
 
-    <div class="grid">
+    <button onclick="prevBA()">←</button>
 
-        <div class="card"><img src="ba.1.png"></div>
-        <div class="card"><img src="ba.2.png"></div>
-        <div class="card"><img src="ba.3.png"></div>
+    <div class="card">
+
+        <img id="baImg" src="ba.1.png">
+
+        <p data-en="Real patient transformation results from our clinic procedures."
+           data-ar="نتائج حقيقية لمرضى العيادة بعد العلاجات المختلفة.">
+           Real patient transformation results from our clinic procedures.
+        </p>
 
     </div>
 
-</section>
+    <button onclick="nextBA()">→</button>
 
-<section class="fade">
-
-    <h2 data-en="What Our Patients Say" data-ar="آراء المرضى">
-        What Our Patients Say
-    </h2>
-
-    <div class="review">“Professional staff, excellent service, and outstanding results.”</div>
-    <div class="review">“The clinic is clean, organized, and very comfortable.”</div>
-    <div class="review">“I felt safe and well taken care of throughout my treatment.”</div>
+</div>
 
 </section>
 
-<section id="contact" class="fade">
-
-    <h2 data-en="Book Your Appointment" data-ar="احجز موعدك">
-        Book Your Appointment
-    </h2>
-
-    <p data-en="To book an appointment, please contact us directly by phone or reach us through our social media pages. Our team will assist you with available dates and treatment details."
-       data-ar="للحجز، يرجى التواصل معنا عبر الهاتف أو صفحات التواصل الاجتماعي، وسيقوم فريقنا بمساعدتك في اختيار الموعد المناسب.">
-        To book an appointment, please contact us directly by phone or reach us through our social media pages.
-    </p>
-
-    <p>
-        📞 01001040821<br>
-        📍 Nasr City, Cairo
-    </p>
-
-    <a href="tel:01001040821" class="btn">Call Now</a>
-    <a href="https://www.facebook.com/NuMedClinics.eg/" class="btn">Facebook</a>
-    <a href="https://www.instagram.com/numedclinics.eg/" class="btn">Instagram</a>
-
-</section>
-
+<!-- FOOTER -->
 <footer>
-    <p>© 2026 Nu.med Clinics — All Rights Reserved</p>
+    <p>© 2026 Nu.med Clinics</p>
 </footer>
-
-<a class="whatsapp" href="https://wa.me/201001040821">💬</a>
 
 <script src="script.js"></script>
 
