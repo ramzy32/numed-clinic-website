@@ -87,30 +87,26 @@ nav {
     }
 }
 .hero{
-    position:relative;
-    overflow:hidden;
-    min-height:700px;
+    position: relative;
+    overflow: hidden;
+    min-height: 700px;
 }
 
 .hero-bg{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    width:100%;
-    max-width:1200px;
-    opacity:0.08;
-    z-index:0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 1200px;
+    opacity: 0.08;
+    z-index: 0;
 }
 
 .hero h1,
 .hero p,
 .hero .btn,
 .hero .social{
-    position:relative;
-    z-index:1;
-}
-.hero{
-    text-align:center;
-    padding:80px 20px;
+    position: relative;
+    z-index: 1;
 }
