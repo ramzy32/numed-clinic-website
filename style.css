@@ -42,8 +42,16 @@ nav {
 /* CARD */
 .card {
     background: white;
-    padding: 10px;
-    border-radius: 12px;
+    padding: 15px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
 }
 
 .card img {
